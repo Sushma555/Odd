@@ -5,30 +5,17 @@ public static void main(String[] args)
   {
 Scanner sc = new Scanner(System.in);
 
-System.out.println("Enter two digits separated only with spaces");
+System.out.println("Enter the digit");
 
-double a = input.nextDouble();
-double b = input.nextDouble();
-String oper = input.nextLine();
-if(oper.equals(" add"))
+input n = sc.nextInt();
+n = n*2;
+for(int i=1; i<=n; i++)
    {
-System.out.println("result= "+(a+b));
-   }
-else if(oper.equals(" sub"))
+if(i%2!=0)
    {
-System.out.println("result= "+(a-b));
+System.out.println(i+" ");
    }
-else if(oper.equals(" mul"))
-   {
-System.out.println("result= "+(a*b));
    }
-else if(oper.equals(" div"))
-   {
-System.out.println("result= "+(a/b));
-   }
-else
-   {
-System.out.println(" invalid input");
-   }
+System.out.println();
   }
 }
